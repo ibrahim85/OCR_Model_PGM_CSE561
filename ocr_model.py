@@ -28,6 +28,8 @@ for row in ocr_r:
 #print ocr_d
 res_scores = []
 res_words = []
+res_prob = []
+
 for data in data_l:
 	all_perms = list(itertools.product(CHARS, repeat=len(data)))
 	uniques = {}
@@ -41,20 +43,21 @@ for data in data_l:
 
 	temp_result_score = 0.0
 	temp_result_word = ''
-
+	temp_prob = 0
 	for word in uniques.keys():
-		temp_prob = 1.0
+		temp_factor = 1.0
 		for k in range(len(word)):
-			#print word[k]
-			#print probs[k]
-			temp_prob *= probs[k][word[k]]
-		uniques[word] = temp_prob
-		if temp_result_score <= temp_prob:
-			temp_result_score = temp_prob
+			temp_factor *= probs[k][word[k]]
+		uniques[word] = temp_factor
+
+		temp_prob = temp_prob + temp_factor
+		if temp_result_score <= temp_factor:
+			temp_result_score = temp_factor
 			temp_result_word = word
 
 	res_scores.append(temp_result_score)
 	res_words.append(temp_result_word)
+	res_prob.append(temp_result_score/temp_prob)
 	print temp_result_word
 
 p = 0
@@ -65,3 +68,5 @@ for row in truth_r:
 	i += 1
 
 print p
+
+# print res_prob
