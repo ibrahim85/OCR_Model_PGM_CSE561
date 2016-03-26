@@ -19,11 +19,12 @@ i = 1
 
 for row in ocr_r:
 	#print row
-	temp[row[1]] = float(row[2])
 	if i % 10 == 0:
 		temp[row[1]] = float(row[2])
 		ocr_d[int(row[0])] = temp
 		temp = {}
+	else:
+		temp[row[1]] = float(row[2])
 	i += 1
 
 trans_d = {}
@@ -76,8 +77,13 @@ for d in range(len(data_l)):
 	trans_z = 0.0
 	comb_z = 0.0
 
+	ocr_correct_prob_acc_temp = 0.0
+	trans_correct_prob_acc_temp = 0.0
+	comb_correct_prob_acc_temp = 0.0
+
 	for word in uniques.keys():
-		temp_prob = 1.0
+		temp_prob = 1.0 
+
 		for k in range(len(word)):
 			#print word[k]
 			#print probs[k]
@@ -87,8 +93,8 @@ for d in range(len(data_l)):
 			ocr_temp_score = temp_prob
 			ocr_temp_word = word
 
-		if ocr_temp_word == truth_l[d]:
-			ocr_correct_prob_acc += log(ocr_temp_score)
+		if word == truth_l[d]:
+			ocr_correct_prob_acc_temp = ocr_temp_score
 
 		ocr_z += temp_prob
 
@@ -99,8 +105,8 @@ for d in range(len(data_l)):
 			trans_temp_score = temp_prob
 			trans_temp_word = word
 
-		if trans_temp_word == truth_l[d]:
-			trans_correct_prob_acc += log(trans_temp_score)
+		if word == truth_l[d]:
+			trans_correct_prob_acc_temp = trans_temp_score
 
 		trans_z += temp_prob
 
@@ -114,24 +120,28 @@ for d in range(len(data_l)):
 			comb_temp_score = temp_prob
 			comb_temp_word = word
 
-		if comb_temp_word == truth_l[d]:
-			comb_correct_prob_acc += log(comb_temp_score)
+		if word == truth_l[d]:
+			comb_correct_prob_acc_temp = comb_temp_score
 
 		comb_z += temp_prob
 
 	ocr_scores.append(ocr_temp_score)
 	ocr_words.append(ocr_temp_word)
 	ocr_probs.append(ocr_temp_score / ocr_z)
+	#print ocr_correct_prob_acc_temp, ocr_z
+	ocr_correct_prob_acc += log(ocr_correct_prob_acc_temp / ocr_z)
 
 	trans_scores.append(trans_temp_score)
 	trans_words.append(trans_temp_word)
 	trans_probs.append(trans_temp_score / trans_z)
+	trans_correct_prob_acc += log(trans_correct_prob_acc_temp / trans_z)
 
 	comb_scores.append(comb_temp_score)
 	comb_words.append(comb_temp_word)
 	comb_probs.append(comb_temp_score / comb_z)
+	comb_correct_prob_acc += log(comb_correct_prob_acc_temp / comb_z)
 
-	print d
+	#print d
 
 ocr_out = csv.writer(open("ocr_output.dat","wb"), delimiter = '\t')
 trans_out = csv.writer(open("trans_output.dat","wb"), delimiter = "\t")
