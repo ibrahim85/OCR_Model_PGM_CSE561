@@ -1,7 +1,7 @@
 import csv
 import itertools
 from math import log
-import pyMNS
+import mn
 from os import listdir
 
 CHARS = ['d', 'o', 'i', 'r', 'a', 'h', 't', 'n', 's', 'e']
@@ -80,10 +80,10 @@ fout = open('trans_outcome_JTA.dat','w')
 count = 0
 for i in range(104):
 	print i
-	reload(pyMNS)
-	pyMNS.loadParseUAIFile("probs/" + str(i) + ".prob")
-	pyMNS.loopyBeliefPropagation()
-	res = pyMNS.computeMAP4MN()
+	reload(mn)
+	mn.loadParseUAIFile("probs/" + str(i) + ".prob")
+	mn.loopyBeliefPropagation()
+	res = mn.computeMAP4MN()
 	word = ''
 	for k in res:
 		word += CHARS[k[1]]
@@ -91,7 +91,7 @@ for i in range(104):
 		count += 1
 	
 	fout.write(word + "\n")
-	fout.write("Partition Function, z : " + str(pyMNS.computePR4MN()) + "\n\n")
+	fout.write("Partition Function, z : " + str(mn.computePR4MN()) + "\n\n")
 
 fout.close()
 print count

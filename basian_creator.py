@@ -1,7 +1,6 @@
 import csv
 import itertools
 from math import log
-import pyMNS
 from os import listdir
 import pprint
 import json
@@ -61,27 +60,35 @@ for d in range(len(data_l)):
 	for i in range(len(out["V"])):
 		t = {"ord" : i}
 		if i % 2 == 0:
-			t["numoutcomes"] = 10
+			t["numoutcomes"] = 2
 			t["vals"] = CHARS
 			t["parents"] = None
 			t["children"] = ["c" + str(i/2)]
-			cprob = [ocr_d[data_l[d][i%2]][c] for c in CHARS]
+			cprob = {}
+			for c in CHARS:
+				cprob[str([c])] = [ocr_d[data_l[d][i/2]][c], 1-ocr_d[data_l[d][i%2]][c]]
 			t["cprob"] = cprob
 		else:
-			t["numoutcomes"] = 10
+			t["numoutcomes"] = 2
 			t["vals"] = CHARS
 			if i == 1:
 				t["parents"] = ["i" + str(i/2)]
+				cprob = {}
+				for c in CHARS:
+					cprob[str([c])] = [ocr_d[data_l[d][i/2]][c], 1-ocr_d[data_l[d][i%2]][c]]
+				t["cprob"] = cprob
 			else:
 				t["parents"] = ["i" + str(i/2), "c" + str(i/2-1)]
+				cprob = {}
+				for k in trans_d.keys():
+					for c in CHARS:
+						cprob[str([k,c])] = [trans_d[k][c] * ocr_d[data_l[d][i/2]][c],1-trans_d[k][c] * ocr_d[data_l[d][i/2]][c]]
+				t["cprob"] = cprob
 			if i == len(out["V"]) -1:
 				t["children"] = None
 			else:
 				t["children"] = ["c" + str(i/2+1)]
-			cprob = {}
-			for k in trans_d.keys():
-				cprob[str([k])] = [trans_d[k][c] for c in CHARS]
-			t["cprob"] = cprob
+			
 
 		if i % 2 == 0:
 			temp["i" + str(i/2)] = t
@@ -90,5 +97,6 @@ for d in range(len(data_l)):
 	out["Vdata"] = temp
 	break
 
+pp.pprint(out)
 with open("0.json","w") as outfile:
 	json.dump(out, outfile)
