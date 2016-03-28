@@ -158,7 +158,7 @@ Pobability of word can be calculated as,
 
 \section{Results Obtained}
 
-Exhaustive inference can be done by calculating probabilities for all possible words for given set of images. To find most probable explanation(MPE) or MAP, juntion tree algorithm is used. 
+Exhaustive inference can be done by calculating probabilities for all possible words for given set of images. To find most probable explanation(MPE) or MAP, juntion tree algorithm is used. Python has a pyMNS library which has JTA implimentation \cite{pymns}.
 
 \begin{table}[h!]
   \begin{center}
@@ -186,4 +186,45 @@ Table \ref{table:1} shows character-wise accuracy, word-wise accuracy and averag
 
 Varying the potentials has no effect on the word predicted or the accuracy calulated. Exhaustive inference for OCR model can be calulated using matrix multiplication which is faster than generating all possible words and calculating probabilites for each of them.
 
+\subsection{Directed Model}
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[scale=0.4]{bnet}
+		\caption{Directed Graphical Model}
+\end{figure}
+
+MAP can be calculated as,
+\begin{align*}
+	\argmaxl_{c_0,c_1,...,c_n} P(c_0,c_1,..c_n,i_0=I_0,i_1=I_1,...,i_n=I_n) = &\argmaxl_{c_0,c_1,...,c_n} \Big( p(c_0)p(c_1c_0)...p(c_n|c_{n-1})p(i_0=I_0|c_0) \\
+	 																			&p(i_1=I_1|c_1)...p(i_n=I_n|c_n)\Big) \\
+\end{align*}
+
+MAP for bayesian network is found using libpgm python library \cite{libpgm}.
+
+\section{Appendix}
+
+\begin{itemize}
+  \item \textit{all\_code.py} does exhaustive reference, finds model accuracy and print outcomes.
+  \item \textit{basian\_creator.py} creates JSON file representing bayesian networks.
+  \item \textit{bayesian\_solver.py} solves bayesian network and gives probability of finding true word given image ids as evidence.
+  \item \textit{parallel\_code.py} is faster implimentation of OCR model using matrix multiplication.
+  \item \textit{furthe\_fun.py} uses pyMNS to solve markov net using JTA \cite{pymns}.
+  \item \textit{bayes\_net} contains all JSON files of bayesian networks.
+  \item \textit{dataset} contains datasets.
+  \item \textit{docs} contains report files.
+  \item \textit{probs} contains markov net files.
+\end{itemize}
+
+
+\begin{thebibliography}{9}
+\bibitem{pymns}
+Python Markov network solver library,
+\texttt{https://github.com/daveti/pymns}
+
+\bibitem{libpgm}
+Python Bayesian network solver library,
+\texttt{http://pythonhosted.org/libpgm/}
+
+\end{thebibliography}
 \end{document}

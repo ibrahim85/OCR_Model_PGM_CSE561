@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.10)  28 MAR 2016 15:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.10)  28 MAR 2016 23:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -609,28 +609,45 @@ Overfull \hbox (11.57474pt too wide) in paragraph at lines 180--181
 cu-racy and av-er-age dataset log-likelihood
  []
 
-[4] [5] (./report.aux) ) 
+[4] <images/bnet.jpg, id=24, 1019.81pt x 764.8575pt>
+File: images/bnet.jpg Graphic file (type jpg)
+ <use images/bnet.jpg>
+Package pdftex.def Info: images/bnet.jpg used on input line 193.
+(pdftex.def)             Requested size: 407.91678pt x 305.93758pt.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 208
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+) [5 <./images/bnet.jpg>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 223.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [6]
+(./report.aux) ) 
 Here is how much of TeX's memory you used:
- 5266 strings out of 493304
- 75611 string characters out of 6139871
- 181587 words of memory out of 5000000
- 8575 multiletter control sequences out of 15000+600000
- 81581 words of font info for 114 fonts, out of 8000000 for 9000
+ 5325 strings out of 493304
+ 76827 string characters out of 6139871
+ 181549 words of memory out of 5000000
+ 8622 multiletter control sequences out of 15000+600000
+ 86476 words of font info for 119 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 47i,18n,47p,601b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.
-enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texl
-ive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on report.pdf (5 pages, 173195 bytes).
+ 47i,18n,47p,601b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/us
+r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texm
+f-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/ut
+opia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sftt1095.pfb>
+Output written on report.pdf (6 pages, 270056 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
