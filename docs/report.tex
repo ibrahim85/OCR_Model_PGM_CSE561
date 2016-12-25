@@ -13,6 +13,7 @@
 \usepackage{sectsty} % Allows customizing section commands
 %\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
 
+\usepackage{datetime}
 \usepackage{fancyhdr} % Custom headers and footers
 \DeclareMathOperator*{\argmax}{argmax}
 \newcommand*{\argmaxl}{\argmax\limits}
@@ -41,13 +42,14 @@
 \normalfont \normalsize 
 \textsc{Indraprastha Institute of Information Technology, Delhi} \\ [25pt] % Your university, school and/or department name(s)
 \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
-\huge CSE561-Probabilistic Graphical Models : Assignment 1\\ % The assignment title
+\huge CSE561-Probabilistic Graphical Models : Project\\ % The assignment title
 \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
 }
 
 \author{Ashutosh Gupta and Sagar Verma} % Your name
 
-\date{\normalsize\today} % Today's date or a custom date
+\newdate{date}{26}{03}{2016}
+\date{\normalsize\displaydate{date}} % Today's date or a custom date
 
 \begin{document}
 

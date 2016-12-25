@@ -4,7 +4,7 @@ import itertools
 from libpgm.nodedata import NodeData
 from libpgm.graphskeleton import GraphSkeleton
 from libpgm.discretebayesiannetwork import DiscreteBayesianNetwork
-
+from copy import deepcopy
 from os import listdir
 
 files = listdir("bayes_net/")
@@ -27,7 +27,6 @@ w = csv.writer(open("bayesian_outcome.txt", "wb"))
 count = 0
 
 for  i in range(104):
-	all_perms = list(itertools.product(CHARS, repeat=len(data_l[i])))
 	nd = NodeData()
 	skel = GraphSkeleton()
 	nd.load('bayes_net/'+str(i)+".txt")    # any input file
@@ -45,24 +44,28 @@ for  i in range(104):
 		dic1[str(k)] = str(c)
 		k += 2
 	
-	maxx = 0
-	pred = ''
-	for word in all_perms:
-		dic2 = {}
-		k = 0
-		for c in word:
-			dic2[str(k)] = [c]
-			k += 2
-		curr = bn.specificquery(dic2,dic1)
+	print dic1
+	k = 2 * len(data_l[i]) - 2
+	dic2 = {}
+	word = ''
+	while k >= 0:
+		maxx = 0
+		char = ''
+		temp = deepcopy(dic2)
+		for c in CHARS:
+			temp[str(k)] = [c]
+			curr = bn.specificquery(temp, dic1)
+			if curr > maxx:
+				maxx = curr
+				dic2[str(k)] = [c]
+				char = c
+		word = char + word
+		k -= 2
 
-		if curr > maxx:
-			maxx = curr
-			pred = ''.join(word)
+	if word == truth_l[i]:
+		count += 1	
 
-	if pred == truth_l[i]:
-		count += 1
-		print count
 
-	print pred
+	w.writerow([word, maxx])
 
-	w.writerow([pred, maxx])
+print count

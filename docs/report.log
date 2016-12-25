@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.10)  28 MAR 2016 23:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.10)  25 DEC 2016 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -415,13 +415,76 @@ Package: amsthm 2004/08/06 v2.20
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2013/09/10 v2.59 Date Time Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count102
+)
+\etb@tempcnta=\count103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2013/08/17 v2.03
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count104
+))
+\c@padzeroesN=\count105
+\fc@tmpcatcode=\count106
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2013/08/17
+)
+\@DT@modctr=\count107
+\@ordinalctr=\count108
+\@orgargctr=\count109
+\@strctr=\count110
+\@tmpstrctr=\count111
+\@DT@loopN=\count112
+\@DT@X=\count113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count114
+\@month=\count115
+\@year=\count116
+\c@HOUR=\count117
+\c@HOURXII=\count118
+\c@MINUTE=\count119
+\c@TOHOUR=\count120
+\c@TOMINUTE=\count121
+\c@SECOND=\count122
+\currenthour=\count123
+\currentminute=\count124
+\currentsecond=\count125
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count126
+\dayofyear=\count127
+\dayofweek=\count128
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks26
+\dt@b=\toks27
+)
 
 Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              with a KOMA-Script class is not recommended.
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrpage2' or `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 17.
+(scrartcl)              package `fancyhdr' on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip54
@@ -436,67 +499,67 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 52.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 54.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 54.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 52.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 54.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 52.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 54.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 52.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count129
 \scratchdimen=\dimen115
 \scratchbox=\box29
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count105
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count132
 \MPscratchDim=\dimen116
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -545,56 +608,56 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 55.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 55
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 55.
+(Font)              scaled to size 13.24796pt on input line 57.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 55.
+(Font)              scaled to size 9.19998pt on input line 57.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 55.
+(Font)              scaled to size 7.35999pt on input line 57.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 55.
+(Font)              scaled to size 13.24796pt on input line 57.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 55.
+(Font)              scaled to size 9.19998pt on input line 57.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 55.
-LaTeX Font Info:    Try loading font information for U+msa on input line 55.
+(Font)              scaled to size 7.35999pt on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 55.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 68.
+(Font)              scaled to size 10.07397pt on input line 57.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 68.
+(Font)              scaled to size 7.63599pt on input line 57.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 68.
+(Font)              scaled to size 5.51999pt on input line 57.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 68.
+(Font)              scaled to size 10.07397pt on input line 57.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 68.
+(Font)              scaled to size 7.63599pt on input line 57.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 68.
+(Font)              scaled to size 5.51999pt on input line 57.
 
 <images/model.jpg, id=1, 1019.81pt x 764.8575pt>
 File: images/model.jpg Graphic file (type jpg)
  <use images/model.jpg>
-Package pdftex.def Info: images/model.jpg used on input line 88.
+Package pdftex.def Info: images/model.jpg used on input line 90.
 (pdftex.def)             Requested size: 407.91678pt x 305.93758pt.
 
 [1
@@ -604,7 +667,7 @@ Package pdftex.def Info: images/model.jpg used on input line 88.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./images/model.jpg>] [
 3]
-Overfull \hbox (11.57474pt too wide) in paragraph at lines 180--181
+Overfull \hbox (11.57474pt too wide) in paragraph at lines 182--183
 []\T1/futs/m/n/10.95 Table 3.1[] shows character-wise ac-cu-racy, word-wise ac-
 cu-racy and av-er-age dataset log-likelihood
  []
@@ -612,28 +675,28 @@ cu-racy and av-er-age dataset log-likelihood
 [4] <images/bnet.jpg, id=24, 1019.81pt x 764.8575pt>
 File: images/bnet.jpg Graphic file (type jpg)
  <use images/bnet.jpg>
-Package pdftex.def Info: images/bnet.jpg used on input line 193.
+Package pdftex.def Info: images/bnet.jpg used on input line 195.
 (pdftex.def)             Requested size: 407.91678pt x 305.93758pt.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 208
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 210
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ) [5 <./images/bnet.jpg>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 223.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 225.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [6]
 (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 5325 strings out of 493304
- 76827 string characters out of 6139871
- 181549 words of memory out of 5000000
- 8622 multiletter control sequences out of 15000+600000
+ 6373 strings out of 493304
+ 91067 string characters out of 6139871
+ 208280 words of memory out of 5000000
+ 9623 multiletter control sequences out of 15000+600000
  86476 words of font info for 119 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 47i,18n,47p,601b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,18n,47p,1038b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texm
 f-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dis
@@ -644,7 +707,7 @@ opia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-sup
 er/sftt1095.pfb>
-Output written on report.pdf (6 pages, 270056 bytes).
+Output written on report.pdf (6 pages, 270068 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
